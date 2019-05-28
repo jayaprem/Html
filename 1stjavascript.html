@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<body>
+ <center> 
+ <p>Strike Rate</p>
+<script>
+function myCalculate() {
+    var RunsScored=parseInt(document.getElementById("runs").value);
+    var BallsFaced=parseInt(document.getElementById("balls").value);
+  var StrikeRate = (RunsScored*100)/BallsFaced; 
+ document.getElementById("result").innerHTML="Strike Rate:"+"</br>"+StrikeRate;
+}
+</script>
+
+
+<table>
+<tr><td>Player Name:    </td> <td><input type="text" id="name"/></td></tr>
+   <tr><td>Runs Scored:  </td> <td><input type="text" id="runs"/></td></tr>
+   <tr><td> Balls Faced:  </td><td><input type="text" id="balls"/></td></tr>
+    </table>
+<br><button onclick="myCalculate()">click</button>
+ <p id="result"></p>
+ </center>
+</body>
+</html>
